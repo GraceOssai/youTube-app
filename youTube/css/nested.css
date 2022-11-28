@@ -1,0 +1,390 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  padding-top: 90px;
+  padding-left: 100px;
+}
+
+.head-section{
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-between didn't work the first time because of the 1fr that was given to the middle div. If we give the middle div a maximum width, then the justify content: space between will be visible. */
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  /* when using position fixed, if you don't want the div or whatever you are positioning to scroll, you'll have to use either the width or height property (after setting the top, left and right properties)...depending on what you want. so here, we are going to have to use the height property */
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(240, 240, 240);
+  z-index: 100;
+
+}
+
+/* Notice from our youtube design that it's only the search bar that was made responsive...so we are going to assign a fixed width value to the left and right sections and then make the middle section responsive.
+ */
+.left-section{
+  width: 150px;
+  /* background-color: aqua; */
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.youtube{
+  height: 20px;
+  width: 90px;
+}
+
+.hamburger{
+  height: 24px;
+  width: 24px;
+}
+
+
+.middle-section{
+  flex: 1;
+  /* background-color: lightcoral; */
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+
+.searchBtn{
+  flex: 1;
+  height: 36px;
+  width: 0;
+  /* This width 0 will makee it collapse for responsiveness */
+  font-size: 16px;
+  /* margin-left: 20px; */
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  box-shadow: inset 1px 2px 3px rgba(161, 154, 154, 0.463);
+
+  /* Note that to set the box-shadow inside instead of outside, we'll first put the value called inset. */
+}
+
+.searchBtn::placeholder{
+  padding: 10px;
+  font-family: Roboto, Ariel;
+  font-size: 16px;
+  color: #606060;
+}
+
+.search-image-btn{
+  width: 66px;
+  padding: 1px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  height: 38px;
+  margin-left: -1px;
+  margin-right: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.search-image-btn .tooltip{
+  background-color: gray;
+  padding: 8px 2px;
+  border-radius: 4px;
+  color: black;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 70px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+
+.search-image-btn:hover .tooltip{
+  opacity: 1;
+}
+.search-voice-btn{
+  padding: 8px 6px;
+  border-radius: 19px;
+  border: none;
+  height: 38px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-voice-btn .tooltip{
+  background-color: gray;
+  padding: 8px 2px;
+  border-radius: 4px;
+  color: black;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  white-space: nowrap;
+  /* this will make the texts not to wrap */
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-voice-btn:hover .tooltip{
+  opacity: 1;
+}
+.search-image{
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+
+
+.voice-search{
+  width: 24px;
+  height: 24px;
+  /* margin-top: 2px; */
+}
+
+.right-section{
+  width: 180px;
+  /* background-color: aqua; */
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.create{
+  position: relative;
+}
+
+.create .tooltip{
+  background-color: gray;
+  padding: 6px 4px;
+  border-radius: 4px;
+  color: black;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 30px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.create:hover .tooltip{
+  opacity: 1;
+}
+
+.upload{
+  width: 24px;
+  height: 24px;
+}
+.youtube-apps{
+  width: 24px;
+  height: 24px;
+}
+
+.youtube-icons{
+  position: relative;
+}
+.youtube-icons .tooltip{
+  background-color: gray;
+  padding: 6px 4px;
+  border-radius: 4px;
+  color: black;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 70px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.youtube-icons:hover .tooltip{
+  opacity: 1;
+}
+.notification{
+  position: relative;
+  /* background-color: blue; */
+}
+.notifications{
+  width: 24px;
+  height: 24px;
+}
+
+.notification-count{
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  /*
+  we actually set this counter to 0 top and right but it didn't come out as it is in the youtube design. In order to achieve the perfect design, we'll have to set it to a negative value as seen above. 
+  */
+  color: white;
+  background-color: red;
+  font-size: 10px;
+  font-family: Roboto;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.notification .tooltip{
+  background-color: gray;
+  padding: 6px 4px;
+  border-radius: 4px;
+  color: black;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 70px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.notification:hover .tooltip{
+  opacity: 1;
+}
+.passport{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 60px;
+}
+
+
+
+.side-bar{
+  position: fixed;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  top: 70px;
+  width: 80px;
+  z-index: 200;
+}
+
+.side-bar-boxes{
+  height: 76px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.side-bar-info{
+  font-family: Roboto;
+  font-size: 10px;
+}
+
+.side-bar-boxes-images{
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.side-bar-boxes:hover{
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.hero-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  padding-right: 20px;
+  /* margin-left: 40px; */
+}
+
+.author-image{
+  /* display: inline-block; */
+}
+
+.position-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.time{
+  color: white;
+  background-color: black;
+}
+
+/*
+If you go to the browser and scroll up now, you'll realize that the images are appearing ontop of the nav bar, thereby covering the nav bar...This is exactly what we explained about the z-index positioning so, we have to go back to the nav bar section and set it to a z-index of 100.  The only position property that this doesn't affect is the position fixed property.
+*/
+
+.thumbnail-img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.channel-video-wrapper{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 10px;
+}
+
+.channel{
+  margin-right: 12px;
+}
+
+.profile-picture{
+  width: 100%;
+  border-radius: 60px;
+}
+
+.video-info{
+  
+}
+
+.video-info-text{
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  margin-top: 0;
+}
+
+.video-info-text2{
+  margin-top: 10px;
+}
+
+.video-info-text2, .video-info-text3{
+  color: #606060;
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.video-info-text3{
+  margin-top: 0;
+}
+
+.author-image2{
+}

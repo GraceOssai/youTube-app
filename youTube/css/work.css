@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.searchBtn{
+  width: 200px;
+  padding: 16px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border: 1px solid blue;
+  margin-left: 18px;
+  display: block;
+}
+
+
+
+.main-work{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.thumbnail-img{
+  display: block;
+  width: 300px;
+  object-fit: contain;
+}
+
+.paragraph{
+  font-size: large;
+  font-weight: bold;
+  margin-top: 3px;
+  line-height: 18px;
+}
+
+.different1, .different2{
+  margin-bottom: 12px;
+}
+
+
+.main-work2{
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.link{
+  color: red;
+}
+
+.link:hover{
+  text-decoration: none;
+}

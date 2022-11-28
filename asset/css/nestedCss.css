@@ -1,0 +1,444 @@
+body{
+  padding-bottom: 1000px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+.nav-bar-section{
+  background-color: aqua;
+  color: black;
+  font-family: Roboto;
+  font-size: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+.image-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-info-cat1{
+  margin-right: 10px;
+} 
+.image-info-cat2{
+  
+}
+.cat-info{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.oliver-cat{
+  color: black;
+  font-family: Roboto;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.youtube-message-add-friend{
+  background-color: blue;
+  color: white;
+  font-family: Roboto;
+  font-size: large;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+  margin-right: 5px;
+}
+
+.direct-message{
+  color: black;
+  font-family: Roboto;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+}
+
+.double-nav-bar{
+
+}
+
+.side-bar1-div{
+}
+.side-bar1{
+  margin-top: 80px;
+  background-color: blanchedalmond;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.side-bar1-image-div{
+  margin-top: 18px;
+}
+
+.side-bar1-images{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+
+.side-bar2{
+  margin-top: 80px;
+  background-color: red;
+  position: fixed;
+  top: 0px;
+  left: 90;
+  bottom: 0;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+
+.the-first{
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.plus{
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.the-second{
+  margin-left: 0;
+}
+
+.the-second, .the-third, .the-fourth{
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+.container1{
+  width:400px;
+  /* height: 200px; */
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-top: 90px;
+  margin-left: 200px;
+}
+
+.sub-container{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.boxes{
+  font-family: Roboto;
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+}
+
+.header{
+  color: gray;
+}
+
+.image-container{
+  width: 80px;
+  /* margin-left: 10px; */
+}
+
+.image{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.paragraphs{
+  flex: 1;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.para-time{
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.para{
+  display: inline-block;
+  margin-right: 125px;
+}
+
+
+.time{
+  width: 28px;
+  margin-top: 0;
+  display: inline-block;
+  margin-bottom: 0;
+  /* margin-right: 50px; */
+}
+.main-time{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Roboto;
+  display: inline-block;
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+  /* vertical-align: top; */
+}
+
+
+.main-paragraphs{
+  font-family: Roboto;
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+  font-weight: bold;
+}
+
+.chewy{
+  margin-bottom: 0;
+  margin-top: 0;
+  color: black;
+  font-weight: bold;
+}
+
+
+.biggest-sale{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+.talk-about{
+  margin-top: 0;
+  color: gray;
+}
+
+
+
+
+
+
+
+.another-container{
+  width:400px;
+  /* height: 200px; */
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+.nested-flexbox{
+  width:420px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.sub-nested-flexbox{
+  flex: 1;
+}
+
+.the-image{
+  width: 80px;
+}
+
+.the-address{
+  margin-bottom: 10px;
+}
+
+.the-main-image{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  /* vertical-align: top; */
+}
+
+.text{
+  /* margin-top: 0; */
+  line-height: 25px;
+  color: black;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.the-span{
+  color: #606060;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.para1{
+  margin-bottom: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color:black;
+}
+
+.para2, .para3{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #464343eb;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-size: 20px; */
+}
+
+
+
+.main-btn{
+  border: 1px solid gray;
+}
+
+.youtube-btn{
+  margin-left: 0;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.backend-btn, .complete-btn{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.tweet {
+  display: flex;
+  flex-direction: row;
+  width: 420px;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+.profile-picture-column {
+  margin-right: 10px;
+}
+
+.profile-picture {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.tweet-column {
+  flex: 1;
+}
+
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.tweet-author {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tweet-author-handle {
+  color: rgb(111, 111, 111);
+}
+
+.tweet-content {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.video-preview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.thumbnail-column {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(220, 220, 220);
+  margin-right: 10px;
+}
+
+.video-info-column {
+  flex: 1;
+}
+
+.video-website {
+  color: rgb(111, 111, 111);
+  margin-bottom: 3px;
+}
+
+.video-title {
+  line-height: 22px;
+}
+
+

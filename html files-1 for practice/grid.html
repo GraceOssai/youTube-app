@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Grid/FLEXBOX</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@600&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../asset/css/grid.css">
+</head>
+<body>
+  <h1 class="header-one">learning grid</h1>
+  <!-- 
+    Two by 3 grid means 2-rows and 3-columns.
+    1 by 2 grid means 1-row and 2-columns.
+   -->
+
+   <!-- 
+    The first thing to note is that a grid works on two containers and above, never one one container alone as it needs more than one container in order for it to be a grid. Then. the number of columns must also start from 2 and not 1.
+    The grid display property has two steps,
+    1. The first step is to set the main container to a display:grid 
+    2. The second step is to state the number of columns you want using the grid-template-columns. 
+
+    if it is two columns, we'll have 100px, 100px but if it is three columns, we'll have 100px, 100px, 100px e.t.c. 
+    so as many columns as you want, you'll indicate as the value of the grid-template columns. (The number of values determines the number of columns).
+
+    The 100px shows how wide each cell would be.
+    -->
+
+    <div class="container1">
+      <div class="first-div">div1</div>
+      <div class="second-div">div2</div>
+    </div>
+    
+    <!-- The above is a 1 by 2 grid.
+      This is because it has 1-row and 2 columns.
+     -->
+
+    <div class="container2">
+      <div class="sub1">div2</div>
+      <div class="sub2">div2</div>
+      <div class="sub3">div2</div>
+      <div class="sub4">div2</div>
+    </div>
+    <!-- This above is a 2 by 2 grid because it has 2 rows and 2 columns. 
+      Note that I can now decide to add another column to this grid, then it will no longer be 2 by 2 but 2 by 3 because it now has 2 rows and 3 columns even though the second row does not have complete cells. e.g
+     -->
+
+     <div class="container3">
+      <div class="first-div">div2</div>
+      <div class="second-div">div2</div>
+      <div class="first-div">div2</div>
+      <div class="second-div">div2</div>
+     </div>
+
+     <!-- 
+      So if I want the three columns to have complete cells, I'll just add two divs
+      -->
+     
+      <div class="container4">
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+      </div>
+      <!-- So this above is 3 by 3 -->
+
+
+      <!-- Also note that we can have 1 row and as many columns as possible. This is 1 by 5 e.g -->
+
+      <div class="container5">
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div2</div>
+      </div>
+
+
+      <!-- 
+        Whenever we have more elements than the number of columns set, it wraps around and starts from another row.
+
+        Rather than use px, we have a much better unit fr(free space)
+        fr is used for responsiveness of the grid.
+        So if we stretch our browser, it stretches or shrinks with it.
+       -->
+
+       <div class="container6">
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div2</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div2</div>
+      </div>
+
+
+
+      <!-- 
+        This will create 3 columns with 2 rows because the columns were set to three so it wrapped and started from the second line.
+       -->
+      <div class="container7">
+        <div class="first-div seven">div1</div>
+        <div class="second-div seven">div2</div>
+        <div class="first-div seven">div3</div>
+        <div class="second-div seven">div4</div>
+        <div class="first-div seven">div5</div>
+        <div class="second-div seven">div6</div>
+      </div>
+
+
+
+      <div class="container8">
+        <div class="first-div">200px</div>
+        <div class="second-div">75px</div>
+      </div>
+
+
+      <div class="container9">
+        <div class="first-div">col1</div>
+        <div class="second-div">col2</div>
+        <div class="first-div">col3</div>
+      </div>
+
+
+      <div class="container10">
+        <div class="first-div">div1</div>
+        <div class="second-div">div2</div>
+        <div class="first-div">div3</div>
+        <div class="second-div">div4</div>
+        <div class="first-div">div5</div>
+        <div class="first-div">div6</div>
+        <div class="first-div">div7</div>
+        <div class="first-div">div8</div>
+      </div>
+
+
+      <div class="container11">
+        <div class="cat-images-div">
+          <img class="cat-images won" src="../youTube/img/cat.jpeg" alt="">
+          <p class="cat-info-description-text">Oliver</p>
+          <div class="cat-grid">
+            <div>
+              <img class="friendship" src="../youTube/img/channel-1.jpeg" alt="">
+            </div>
+            <div>
+              <p>2 mutual friends</p>
+            </div>
+          </div>
+        </div>
+        <div class="cat-images-div">
+          <img class="cat-images tuu" src="../youTube/img/black-cat.jpeg" alt="">
+          <p class="cat-info-description-text">Mimi</p>
+          <div class="cat-grid">
+            <div>
+              <img class="friendship" src="../youTube/img/channel-1.jpeg" alt="">
+            </div>
+            <div>
+              <p>3 mutual friends</p>
+            </div>
+          </div>
+        </div>
+        <div class="cat-images-div">
+          <img class="cat-images tree" src="../youTube/img/wierd-cat.jpeg" alt="">
+          <p class="cat-info-description-text">Rex</p>
+          <div class="cat-grid">
+            <div>
+              <img class="friendship" src="../youTube/img/channel-1.jpeg" alt="">
+            </div>
+            <div>
+              <p class="testing">4 mutual friends</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- PRACTICE USING FLEXBOX -->
+
+
+
+      <h1 class="header">first practise with flex </h1>
+      <div class="flex">
+        <div class="flex1">div 1</div>
+        <div class="flex2">div 2</div>
+      </div>
+
+      <!-- 
+        Note that 1fr in grid is equivalent to flex:1 in flex. 2fr = flex:2
+       -->
+
+       
+       <h1 class="header">second practice with flex and this makes it responsive  </h1>
+       <div class="main-flex">
+        <div class="main-flex2">div 2</div>
+        <div class="main-flex1">div 1</div>
+        <div class="main-flex2">div 2</div>
+        <div class="main-flex1">div 1</div>
+      </div>
+
+
+      <!-- 
+        This is how to move items on the row axis. The default for justify content is start. so when we say justify content: start, it remains in its position. When we say end, it moves to the right side. when we say center, it comes to the center. If we say space evenly, it will spread all the items inside the container evenly. If we say space between, it will create space between the elements. If we say space around, it will give space at the end sides. 
+       -->
+
+       <h1 class="header">this will justify the content to the center, start and end  </h1>
+      <div class="justify-contentDiv">
+        <div class="justify-practise1">100px wide</div>
+        <div class="justify-practise2">100px wide</div>
+        <div class="justify-practise3">100px wide</div>
+      </div>
+
+      <!-- 
+        Note that even while at flex-direction:row. we can align the items to either STRECH(default value), START(which will move to the to of the container on the vertical axis), or END(which will move to the end of the container on the vertical axis....)e.g
+       -->
+
+       <h3 class="header">flex center </h3>
+       <div class="justify-contentDiv2">
+        <div class="justify-practise1">100px wide</div>
+        <div class="justify-practise2">100px wide</div>
+        <div class="justify-practise3">100px wide</div>
+      </div>
+
+
+
+
+      <h3 class="header">flex start</h3>
+      <div class="justify-contentDiv3">
+        <div class="justify-practise1">100px wide</div>
+        <div class="justify-practise2">100px wide</div>
+        <div class="justify-practise3">100px wide</div>
+      </div>
+
+
+
+      <h3 class="header">flex end </h3>
+      <div class="justify-contentDiv4">
+        <div class="justify-practise1">100px wide</div>
+        <div class="justify-practise2">100px wide</div>
+        <div class="justify-practise3">100px wide</div>
+      </div>
+
+
+
+      <h3 class="header">practise exercise1 </h3>
+      <div class="justify-contentDiv5">
+        <div class="justify-practise4">100px wide</div>
+        <div class="justify-practise5">100px wide</div>
+      </div>
+
+      <h3 class="header"> practise exercise2</h3>
+      <div class="justify-contentDiv5">
+        <div class="justify-practise6">100px wide</div>
+        <div class="justify-practise7">100px wide</div>
+        <div class="justify-practise8">100px wide</div>
+      </div>
+
+
+
+      <div class="nav-bar">
+        <div><p class="home-icon">Home</p></div>
+        <div class="search-bar">
+          <input class="input-field" type="text" placeholder="searching...">
+        </div>
+        <div>
+          <button class="download-btn">Download </button>
+        </div>
+      </div>
+      
+
+
+
+
+
+      
+      <div class="notify">
+        <div class="column-div">
+          <div><p class="home">Home</p></div>
+          <div class="number">
+            <button class="number-btn">14</button>
+          </div>
+        </div>
+        
+        
+        <div class="column-div">
+          <div><p class="home">Notification</p></div>
+          <div class="number">
+            <button class="number-btn">3</button>
+          </div>
+        </div>
+        
+        
+        
+        <div class="column-div">
+          <div><p class="home">Message</p></div>
+          <div class="number">
+            <button class="number-btn">5</button>
+          </div>
+        </div>
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="facebook">
+          <div class="facebook-inner">
+            <img class="inner-info-image" src="../youTube/img/wierd-cat.jpeg" alt="">
+            <div class="infoDiv">
+              <p class="inner-info name">Oliver</p>
+              <p class="inner-info handle">the cat</p>
+              <p class="inner-info category">popular</p>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          
+
+          <div class="facebook-inner">
+            <img class="inner-info-image" src="../youTube/img/wierd-cat.jpeg" alt="">
+            <div class="infoDiv">
+              <p class="inner-info name">Oliver</p>
+              <p class="inner-info handle">the cat</p>
+              <p class="inner-info category">popular</p>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          
+
+
+          <div class="facebook-inner">
+            <img class="inner-info-image" src="../youTube/img/wierd-cat.jpeg" alt="">
+            <div class="infoDiv">
+              <p class="inner-info name">Oliver</p>
+              <p class="inner-info handle">the cat</p>
+              <p class="inner-info category">popular</p>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          
+        </div>
+
+
+
+        
+
+
+
+        
+
+      
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+.subcribe-button{
+  background-color: rgb(212, 4, 4);
+  color: white;
+  border: none;
+  /* height: 36px;
+  width: 105px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: top;
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+
+/*
+
+One CSS property we would be looking at is the OPACITY
+Opacity tells us how see-through an html element is. it takes a value between 0 and 1.
+the value of 1 says that the html element is completely normal (no opacity applied) but as we decrease the value, say to 0.7, the element begins to fade.
+if we set the opacity to 0, it completely fades out.
+
+Note that a good transitioning time is usually 0.15s.
+*/
+
+/*
+Another selector we are going to look at is the HOVER...It is called the Pseudo-class selector.
+This applies a different style from the original styles given to an element. for example, if we set the background color of subscribe-button to green(inside the hover selector), when we hover, the background color changes from red to green but when we're not hovering, it remains red 
+*/
+
+/* .subcribe-button:hover{
+  background-color: green;
+} */
+
+/* So the hover adds extra styles when we hover. */
+
+/*
+Another type of the pseudo-class is the ACTIVE..This activates the moment a button is clicked. So when the button is clicked, it turns blue. 
+*/
+
+/* .subcribe-button:active{
+  background-color: blue;
+} */
+
+
+.subcribe-button:hover{
+  opacity: 0.2;
+}
+
+/* When we click on the button, it would fade out even more...so we'll set the opacity on the ACTIVE PSEUDO-CLASS not on the HOVER PSEUDO-CLASS e.g */
+
+.subcribe-button:active{
+  opacity: 0.2;
+}
+
+.join{
+  background-color: white;
+  border-color: blue;
+  color: blue;
+  border: 2px solid;
+  border-width: 1px;
+  /* height: 36px;
+  width: 50px; 
+  It is not advisible to set the height and width like this. What if the content of the button is longer than the height and width given? there would be an overflow...Hence the best thing to do is use the BOX MODEL
+
+  BOX MODEL
+  This box-model dtermines how much space an element takes up on the page and how far away it is from other elements.
+
+  Padding would be a better fit. If we increase the content of the button, the button only resizes with the content
+  */
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  /* Because we added the padding to just the top and left side, this join button would authomatically no longer be in the same line with the rest of the buttons. This is because, by default, the browser tries to align the buttons based on the text What we can do to align all of them again is to use the css property called vertical-align and set it to a value of top..Note that the property should be on the other buttons not the join itself...Note also that we can set it to a value of bottom */
+
+  /* But for the sake of aesthetics, we'll put the padding all round */
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s;
+  /* also note that we can set multiple transition values....maybe we want to transition both the  background-color and the opacity plus the text color..just anything. all we need is just to separate them with a comma. e.g is above*/
+
+  /* Note that always ensure to put the transition property inside the parent selector and not on the pseudo-classes. */
+}
+
+
+.join:hover{
+  background-color: blue;
+  color: white;
+}
+
+.join:active{
+  opacity: 0.4;
+}
+
+
+/*
+Notice that when we hover over the join button, the color moved quickly. if we want to time the pace at which it moves, we have to use the CSS PROPERTY CALLED TRANSITION. we would have to set the TRANSITION property in the main subscribe-button.
+
+The TRANSITION property takes two values;
+1. what we want to transition (In our case, we want to transition the opacity smoothly when we hover over  it instead of instantaneously)
+2. The time the transitioning will take.
+*/
+
+.twitter{
+  background-color: blue;
+  color: white;
+  border: none;
+  /* height: 36px;
+  width: 105px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: top;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+
+.twitter:hover{
+    /* box-shadow: 10px 15px 4.5px black */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+}
+
+
+/* Another CSS PROPERTY is the box-shadow. this box-shadow takes in 4 values.
+1. the first value determines the horizontal position of the shadow. So if we change the first value to 10px, you will see the shadow on the right side.
+
+2. The second value sets the vertical position of the shadow. e.g 15px..this comes down.
+
+3. While the third value makes our shadow blur.
+
+4. The fourth value sets the shadow color.
+
+Note that usually, the shadow color is a deeper shade of any color they cover
+
+
+Also note that we can set the color of the box-shadow (which is the 4th value of the shadow-box) to rgba value...The last number in the rgba is the "a-value". As we decrease the a-value, the shadow fades out and vise-visa...
+
+Note that shadows are best when they are very subtle..hence, decreasing the a-value gives us the best shadow.
+*/
+
+.uber-btn{
+  background-color: black;
+  color: white;
+  border: none;
+  /* height: 36px;
+  width: 105px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: top;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 1s, color 1s;
+}
+
+.uber-btn:hover{
+  background-color: blue;
+  color: white;
+}
+
+.amazon-btn{
+  background-color: rgb(255, 216, 20);
+  color: white;
+  border: none;
+  /* height: 36px;
+  width: 105px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: top;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgba(255, 216, 20, 0.6);
+}
+
+
+.gitHub-btn{
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  /* height: 36px;
+  width: 105px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: top;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: box-shadow 1s;
+}
+
+.gitHub-btn:hover{
+  box-shadow: 10px 5px 3px rgba(86, 231, 20, 0.6);
+}
+
+.bootstrapDiv{
+  background-color: wheat;
+  width: 250px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+.bootstrap-btn{
+  background-color: rgb(121, 82, 179);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: 12px;
+  font-weight: bold;
+  transition: opacity 0.15s;
+}
+
+.bootstrap-btn:hover{
+  opacity: 0.4;
+  background-color: rgb(21, 222, 237);
+  color: red;
+}
+
+.bootstrap-download-btn{
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 1s, color 0.15s;
+}
+
+.bootstrap-download-btn:active{
+  background-color: aqua;
+  color: blue;
+}
+
+.linkedinDiv{
+  background-color: wheat;
+  width: 350px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+
+.linkedin-btn{
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: 26px;
+  font-weight: bold;
+  transition: background-color 1s, color 1s;
+}
+
+
+.linkedin-btn:hover{
+  background-color: blue;
+  color: black;
+}
+
+.linkedin-save-btn{
+  background-color: white;
+  color: rgb(10, 102, 194);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 70px;
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: font-size 1s, font-weight 1s, color 1s, background-color 1s, border 1s;
+}
+.linkedin-save-btn:hover{
+  font-size: larger;
+  font-weight: bolder;
+  color: red;
+  background-color: blue;
+  border: none;
+}
+
+
+
+.new-linkedin{
+  margin-top: 50px;
+}
+
+
+.linkedin-save-btn-new{
+  border: 1px solid blue;
+  border-bottom: 30px solid blue;
+  background-color: blue;
+  box-shadow: 10px 10px 4px black;
+}

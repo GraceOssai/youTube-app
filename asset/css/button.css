@@ -1,0 +1,163 @@
+body{
+  height: 3000px;
+}
+
+
+/*
+The CSS or CASSCADING STYLE SHEET is used to change the appearance of our html.
+*/
+
+
+
+button{
+  background-color: rgb(212, 4, 4);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/*
+ Css syntax
+
+ The button above is called a CSS SELECTOR. it tells the computer which element on the page we are targeting with our css code. 
+ In the case, we are targeting all buttons on the page. So is there are multiple buttons, it will assign the background color red to all of them.
+ 
+ The background-color is called the css property while the red is the value.
+*/
+
+
+.join{
+  background-color: white;
+  border-color: blue;
+  color: blue;
+  border: 2px solid;
+  border-width: 1px;
+  height: 36px;
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+
+.twitter{
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.uber-btn{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.amazon-btn{
+  background-color: rgb(255, 216, 20);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gitHub-btn{
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bootstrapDiv{
+  background-color: wheat;
+  width: 250px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+.bootstrap-btn{
+  background-color: rgb(121, 82, 179);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+.bootstrap-download-btn{
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.linkedinDiv{
+  background-color: wheat;
+  width: 350px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+
+.linkedin-btn{
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: 26px;
+  font-weight: bold;
+}
+
+
+.linkedin-save-btn{
+  background-color: white;
+  color: rgb(10, 102, 194);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 70px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+

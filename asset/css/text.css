@@ -1,0 +1,247 @@
+
+.text{
+  text-align: center;
+}
+
+.hero-section-wrapper{
+  border: 2px solid blue;
+  display: inline-block;
+  width: 250px;
+}
+.hero-section{
+  display: inline-block;
+  margin-right: 20px;
+}
+.cat-image{
+  width: 100px;
+  object-fit: contain;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.cat-image-info{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cat-image-description{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.one{
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: black;
+}
+.two, .three{
+  color: #606060;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+
+
+.hero-section-wrapper2{
+  border: 2px solid transparent;
+  width: 400px;
+  margin-top: 80px;
+}
+
+.follow-btn{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 45px;
+  margin-left: 90px
+}
+.follow{
+  background-color: rgb(57, 159, 196);
+  border-radius: 6px;
+  padding: 10px;
+  width: 80px;
+  border: none;
+  font-family: Roboto;
+  font-weight: bolder;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+}
+
+
+
+
+
+.container{
+  display: inline-block;
+}
+
+
+.tweeter-wrapper-div1{
+  display: inline-block;
+  box-shadow: 10px 10px 8px rgba(193, 200, 241, 0.213);
+  border: 2px solid rgb(215, 222, 225);
+  margin-right: 15px;
+}
+
+.tweeter-wrapper-div1-subSection{
+  margin: 10px;
+}
+
+.tweeter-wrapper-image{
+  width: 180px;
+}
+
+.num1, .num2, .num3{
+  height: 187px;
+  object-fit: cover;
+  width: 204px;
+}
+
+.image-description{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.profile-image-container{
+  display: inline-block;
+}
+
+.profile-image{
+  border-radius: 150px;
+}
+
+.mutual-friends{
+  display: inline-block;
+  vertical-align: top;
+}
+.mutual-friends-text{
+  font-family: Roboto;
+  font-weight: bolder;
+  color: #606060;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.addFriend-btn{
+  margin-top: 4px;
+}
+
+.button{
+  background-color: rgb(57, 159, 196);
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+
+
+
+
+
+
+div {
+  font-family: Arial;
+}
+
+.container-main {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  width: 300px;
+  border-radius: 6px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.notifications {
+  background-color: rgb(49, 109, 245);
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+
+
+.info {
+  width: 200px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.handle {
+  color: rgb(150, 150, 150);
+  margin-bottom: 5px;
+}
+
+.category {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+}
+
+.follow-button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+

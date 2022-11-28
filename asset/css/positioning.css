@@ -1,0 +1,127 @@
+body{
+  padding-bottom: 3000px;
+}
+
+
+.nav-bar{
+  background-color: lightblue;
+  font-size: 20px;
+  height: 80px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.absolute{
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  /*
+  from this right positioning of 20px, you'll find out that this div is now sitting on top of the nav bar div. but if we give it a z-index of 1 and give the nav bar a z-index of 2, the nav bar will take precedence over this absolute div.
+
+  z-index determines which element appear in front and which element appear behind. The default z-index is 0.
+
+  By default, elements whose codes are written below another element will appear in front of that element in the browser but we can override this by giving a high z-index value to the one we want it to appear in front. 
+  So in the nav bar, it is usually set to a z-index of 100 so that incase we have more elements coming after the nav bar, the nav bar will still appear in front.
+  */
+  color: black;
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+.relative{
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  margin-top: 30px;
+  position: relative;
+} 
+
+.absolute2{
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  bottom: 0;
+  /* The bottom 0 didn't work. What could be the issue? */
+}
+
+
+.bottom-right{
+  background-color: blue;
+  color: white;
+  margin-top: 50px;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+.close-btn{
+  /* margin-top: 120px; */
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  padding: 6px 2px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  /* right: 0; */
+}
+
+.time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+.clothes{
+  background-color: cyan;
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+.dress{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+
+.percentage{
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.add-to-cart1{
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+}
+
+
+
+
+
+
+
